@@ -35,3 +35,18 @@ console.log (userName + " set a goal to run an additional " +parseInt(goalMiles)
 var runDays = prompt ("Great! How many days a week do you want to go running?");
 console.log (userName + " will run " +parseInt(runDays)+ " days every week.");
 
+
+//Calculate the amount of miles the user will need to run based on the goal miles and the amount of running days each week
+var totalMiles = (parseInt(weeklyMiles) + parseInt(goalMiles)); //Calculates the goal miles
+var newAverage = ((parseInt(weeklyMiles) + parseInt(goalMiles)) / parseInt(runDays)); //Averages the amount of miles to reach goal miles
+
+alert ("In order to reach your goal of " +totalMiles+ " miles each week, you will need to run about " +Math.round(newAverage)+ " miles on your running days.");
+console.log (userName + " will need to run " +newAverage+ " miles each day in order to reach " +totalMiles+ " miles a week.");
+
+
+/* I typed in 28 for the amount of miles I currently run each week.
+ I typed in 5 for the amount of additional miles I want to run each week,
+ and typed 4 for the amount of days a week I would like to run.
+ My calculator indicated that I would need to run an average of 8 miles per running day in order to reach
+ my goal of 33 miles a week.
+ */
