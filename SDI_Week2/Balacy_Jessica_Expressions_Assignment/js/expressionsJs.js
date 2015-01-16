@@ -28,8 +28,10 @@ console.log (userName + " currently runs an average of " +Math.round(weeklyMiles
 
 //Obtain the number of miles the user wants to increase by each week
 var goalMiles = prompt ("Let's make a goal to increase the amount of miles you run. \nHow many more miles would you like to run each week?");
+console.log (userName + " set a goal to run an additional " +parseInt(goalMiles)+ " miles each week.");
 
 
-
-
+//Obtain the number of days the user would like to run each week
+var runDays = prompt ("Great! How many days a week do you want to go running?");
+console.log (userName + " will run " +parseInt(runDays)+ " days every week.");
 
