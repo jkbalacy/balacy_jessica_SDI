@@ -22,7 +22,7 @@ if (isNaN(currentMiles) || currentMiles ==="") {
 //ask the user for the number of months since the last oil change.
 var monthsSince = prompt ("How many months has it been since your last oil change?");
 //check to see if the user left the field blank or entered a text string.
-monthsSince = (isNaN(monthsSince) || monthsSince=="") ? prompt ("Please input a numerical value."): alert ("Thank you!");
+monthsSince = (isNaN(monthsSince) || monthsSince==="") ? prompt ("Please input a numerical value."): Number(monthsSince);
 
 //calculate the number of miles used since last oil change by subtracting milesBefore from currentMiles.
 var milesUsed = (currentMiles-milesBefore);
