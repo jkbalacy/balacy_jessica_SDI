@@ -30,4 +30,21 @@ console.log ("The user has driven " +milesUsed+ " miles since the last oil chang
 
 //calculate the average amount of miles the user drives each month by dividing milesUsed by monthsSince
 var mileageRate = (milesUsed/monthsSince);
-console.log ("The user drove an average of " +mileageRate+ " miles per month since last oil change.");
+console.log ("The user drove an average of " +Math.round(mileageRate)+ " miles per month since last oil change.");
+
+//estimate how many months the user can drive his/her vehicle until an oil change is required.
+var monthsUntil = ((3000-(milesUsed))/mileageRate);
+console.log ("The user has about " +monthsUntil+ " months left until an oil change is required.");
+
+//given the variables, determine if and when an oil change is required.
+if (milesUsed<1500) {
+ alert ("You've driven " +milesUsed+ " miles and have about " +monthsUntil+ " months until your next oil change.");
+ console.log ("The user has " +(3000-milesUsed)+ " miles left.  An oil change is not required at this time.");
+
+} else if (milesUsed<3000){
+ alert ("You may want to change your oil soon.  \nYou've driven " +milesUsed+ " miles and have about " +monthsUntil+ " month(s) until an oil change is required.");
+ console.log ("The user has " +(3000-milesUsed)+ " mile(s) left.  An oil change will be required soon.");
+} else {
+ alert ("You have driven " +milesUsed+ " miles.  \nPlease change your oil as soon as possible.");
+ console.log ("The user has driven " +(milesUsed-3000)+ " mile(s) over the limit.  An oil change is required.");
+}
