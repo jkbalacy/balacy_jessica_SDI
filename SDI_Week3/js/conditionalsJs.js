@@ -28,4 +28,6 @@ monthsSince = (isNaN(monthsSince) || monthsSince=="") ? prompt ("Please input a 
 var milesUsed = (currentMiles-milesBefore);
 console.log ("The user has driven " +milesUsed+ " miles since the last oil change.");
 
-
+//calculate the average amount of miles the user drives each month by dividing milesUsed by monthsSince
+var mileageRate = (milesUsed/monthsSince);
+console.log ("The user drove an average of " +mileageRate+ " miles per month since last oil change.");
