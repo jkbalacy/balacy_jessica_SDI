@@ -31,3 +31,13 @@ var age = prompt("What is your age?");
 while(age==="" || isNaN(age)) {
     age = prompt ("Please enter a numerical value only.");
 }
+
+//get the user's gender
+var gender = prompt("Please enter your gender:");
+gender=gender.toLowerCase();
+
+//validate the prompt using a while loop
+while(gender !="male" && gender !="female") {
+    gender = prompt ('Please enter "Male" or "Female" only.');
+}
+
