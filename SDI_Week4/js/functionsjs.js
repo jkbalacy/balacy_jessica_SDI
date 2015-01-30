@@ -67,3 +67,12 @@ else {
     alert ("Your estimated BMR is " +fResults+ " calories per day. \nThis is the estimated amount of calories you'd burn if you stayed in bed all day!");
 
 }
+
+
+/* Ran a test on both functions using the same values for each variable.
+I entered "103" for my weight, "60" for my height, and "25" for my age.
+
+If I were a male, my estimated BMR is: 1299.69 calories/day.
+If I were a female, my estimate BMR is: 1267.55 calories/day.
+
+*/
