@@ -41,3 +41,25 @@ while(gender !="male" && gender !="female") {
     gender = prompt ('Please enter "Male" or "Female" only.');
 }
 
+//Declare two functions: if user is a male, run the first function. if the user is a female, run the second function.
+if (gender ==="male") {
+    function getMaleRate (mWeight, mHeight, mAge){
+
+    //The following equation will calculate the BMR for male users.
+        var maleBMR = (66 + (6.23*weight)+(12.7*height)-(6.8*age));
+        return maleBMR;
+    }
+var mResults = getMaleRate(weight, height, age);
+    console.log (mResults);
+}
+else {
+ function getFemaleRate (fWeight, fHeight, fAge){
+
+        //The following equation will calculate the BMR for female users.
+        var femaleBMR = (655 + (4.35*weight)+(4.7*height)-(4.7*age));
+        return femaleBMR;
+    }
+    var fResults = getFemaleRate (weight, height, age);
+    console.log (fResults);
+
+}
